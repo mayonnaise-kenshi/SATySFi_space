@@ -1,5 +1,6 @@
 FROM amutake/satysfi
 
+# ocamlのPATH通す
 ENV PATH $PATH:/root/.opam/$OCAML_VERSION/bin
 
 # tools
@@ -10,18 +11,16 @@ RUN apt update \
 RUN opam install satysfi-azmath && satyrographos install
 
 #図
-RUN eval $(opam env) && opam install satysfi-figbox && satyrographos install
+RUN opam install satysfi-figbox && satyrographos install
 
 #表
-RUN eval $(opam env) && opam install satysfi-easytable && satyrographos install
+RUN opam install satysfi-easytable && satyrographos install
 
 #引用
 #引用のライブラリ
-RUN eval $(opam env) && opam install satysfi-bibyfi && satyrographos install
+RUN opam install satysfi-bibyfi && satyrographos install
 #参考文献リスト生成アプリ
-# RUN eval $(opam env) && git clone https://github.com/puripuri2100/BibSATySFi.git \
+# RUN && git clone https://github.com/puripuri2100/BibSATySFi.git \
 #     && cd BibSATySFi \
 #     && opam pin add bibsatysfi . \
 #     && opam install bibsatysfi
-
-CMD eval $(opam env)
