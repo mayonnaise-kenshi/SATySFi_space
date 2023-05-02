@@ -27,8 +27,11 @@ forkしてください．
 ## その他アプリ
 
  - [.bibからBiByFiの形式に変換するソフト](https://github.com/puripuri2100/BibSATySFi/blob/master/doc/doc-ja.md)←ビルドできないので後で...
- - [SATySFi LSP]()
+ - [SATySFi LSP](https://zenn.dev/monaqa/articles/2021-12-10-satysfi-language-server)
  - fish
 
 
+### LSPのマルチステージビルド
+busterのイメージなら，.soが同じなので，あまり気にせずバイナリを持ってきていいみたい．[Rustでマルチステージビルドしてる例](https://zenn.dev/ucwork/articles/acec204571362b)
 
+[Cargoでバイナリを指定場所にインストールする方法](https://maku77.github.io/p/owbo2dp/)
