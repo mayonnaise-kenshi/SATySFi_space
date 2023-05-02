@@ -1,11 +1,13 @@
 FROM amutake/satysfi
 
+ENV PATH $PATH:/root/.opam/$OCAML_VERSION/bin
+
 # tools
 RUN apt update \
     && apt install -y fish
 
 # azmath
-RUN eval $(opam env) && opam install satysfi-azmath && satyrographos install
+RUN opam install satysfi-azmath && satyrographos install
 
 #図
 RUN eval $(opam env) && opam install satysfi-figbox && satyrographos install
