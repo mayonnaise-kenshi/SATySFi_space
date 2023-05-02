@@ -1,5 +1,9 @@
 FROM amutake/satysfi
 
+# tools
+RUN apt update \
+    && apt install -y fish
+
 # azmath
 RUN eval $(opam env) && opam install satysfi-azmath && satyrographos install
 
