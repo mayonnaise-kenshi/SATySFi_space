@@ -1,7 +1,7 @@
 version: '3'
 services: 
     satysfi-space:
-        build: "."
+        image: ghcr.io/mayonnaise-kenshi/satysfi-space:latest
         container_name: satysfi-space
         command: sleep infinity
         working_dir: '/workdir'
