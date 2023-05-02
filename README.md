@@ -4,6 +4,8 @@
 ## 使い方
 forkしてください．
 
+[Container Image (latest)](https://github.com/mayonnaise-kenshi/SATySFi_space/pkgs/container/satysfi-space)
+
 ## memo
 
  - [ベースイメージ](https://github.com/amutake/docker-satysfi)
@@ -30,8 +32,12 @@ forkしてください．
  - [SATySFi LSP](https://zenn.dev/monaqa/articles/2021-12-10-satysfi-language-server)
  - fish
 
-
+https://community.forallsecure.com/t/error-buildx-call-failed-with-error-denied-installation-not-allowed-to-write-organization-package/354
 ### LSPのマルチステージビルド
 busterのイメージなら，.soが同じなので，あまり気にせずバイナリを持ってきていいみたい．[Rustでマルチステージビルドしてる例](https://zenn.dev/ucwork/articles/acec204571362b)
 
 [Cargoでバイナリを指定場所にインストールする方法](https://maku77.github.io/p/owbo2dp/)
+
+## Actions
+[リポジトリをpull→build→ghcr.ioにpush](https://zenn.dev/515hikaru/articles/migrate-to-ghcr)
+[イメージをghcr.ioに上げる場合，リポジトリのActionsにwrite権限を付与する必要がある](https://community.forallsecure.com/t/error-buildx-call-failed-with-error-denied-installation-not-allowed-to-write-organization-package/354)
