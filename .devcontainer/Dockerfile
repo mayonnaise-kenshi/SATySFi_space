@@ -2,7 +2,7 @@ FROM rust:buster AS lsp-build
 # build lsp
 RUN git clone https://github.com/monaqa/satysfi-language-server \
     && cd satysfi-language-server \
-    && cargo install --path . --root /usr/local/bin
+    && cargo install --path . --root /usr/local
 
 FROM amutake/satysfi AS dev-env
 
