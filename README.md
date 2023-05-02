@@ -32,7 +32,6 @@ forkしてください．
  - [SATySFi LSP](https://zenn.dev/monaqa/articles/2021-12-10-satysfi-language-server)
  - fish
 
-https://community.forallsecure.com/t/error-buildx-call-failed-with-error-denied-installation-not-allowed-to-write-organization-package/354
 ### LSPのマルチステージビルド
 busterのイメージなら，.soが同じなので，あまり気にせずバイナリを持ってきていいみたい．[Rustでマルチステージビルドしてる例](https://zenn.dev/ucwork/articles/acec204571362b)
 
