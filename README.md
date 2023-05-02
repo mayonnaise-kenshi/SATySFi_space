@@ -9,6 +9,8 @@ forkしてください．
  - [D論書いた人](https://qiita.com/shoudai7856/items/2f7a19f7bc56a49ed3ee)
  - [SATySFiベストプラクティス](https://zenn.dev/monaqa/articles/2022-04-27-satysfi-bestpractice)
 
+[opamでインストールしたアプリにPATHを通す](https://github.com/ocaml/opam/issues/3648)
+
 ## 記法memo
 [SATySFiのコマンド記法](https://zenn.dev/monaqa/articles/2020-12-10-satysfi-for-beginner-command-syntax)
 コマンド自体はLaTeX互換だから基本的にはLaTeXのコマンド見ればよい．
