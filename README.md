@@ -38,6 +38,9 @@ busterのイメージなら，.soが同じなので，あまり気にせずバ�
 
 [Cargoでバイナリを指定場所にインストールする方法](https://maku77.github.io/p/owbo2dp/)
 
+### pdfのプレビュー
+```tomoki1207.pdf```をローカルのVSCodeに入れる．(ブラウザ上だと動かないので，ローカルのVSCodeから繋ぐ)
+
 ## Actions
 [リポジトリをpull→build→ghcr.ioにpush](https://zenn.dev/515hikaru/articles/migrate-to-ghcr)
 [イメージをghcr.ioに上げる場合，リポジトリのActionsにwrite権限を付与する必要がある](https://community.forallsecure.com/t/error-buildx-call-failed-with-error-denied-installation-not-allowed-to-write-organization-package/354)
