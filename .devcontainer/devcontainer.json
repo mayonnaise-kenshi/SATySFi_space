@@ -1,0 +1,17 @@
+{
+    "name": "satysfi-space",
+    "dockerComposeFile":"docker-compose.yml",
+    "service": "satysfi-space",
+    "workspaceFolder": "/workdir",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+          // Add the IDs of extensions you want installed when the container is created.
+          "extensions": [
+            "mhutchie.git-graph",
+            "pickoba.satysfi-workshop"
+          ]
+        }
+      }
+}
