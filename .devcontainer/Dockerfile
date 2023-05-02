@@ -1,4 +1,13 @@
-FROM amutake/satysfi
+FROM rust:buster AS lsp-build
+# build lsp
+RUN git clone https://github.com/monaqa/satysfi-language-server \
+    && cd satysfi-language-server \
+    && cargo install --path . --root /usr/local/bin
+
+FROM amutake/satysfi AS dev-env
+
+# add lsp
+COPY --from=lsp-build /usr/local/bin/satysfi-language-server /usr/local/bin
 
 # ocamlのPATH通す
 ENV PATH $PATH:/root/.opam/$OCAML_VERSION/bin
