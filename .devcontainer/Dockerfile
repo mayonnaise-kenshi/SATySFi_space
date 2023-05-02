@@ -16,6 +16,6 @@ RUN eval $(opam env) && opam install satysfi-bibyfi && satyrographos install
 RUN git clone https://github.com/puripuri2100/BibSATySFi.git \
     && cd BibSATySFi \
     && opam pin add bibsatysfi . \
-    && opam install bibsatysfi
+    && opam install bibsatysfi --deps-only
 
 CMD eval $(opam env)
